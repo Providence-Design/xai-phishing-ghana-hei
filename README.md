@@ -35,7 +35,7 @@ submitted by Ghanaian university students via primary field survey.
 
 2. **GH-XGBoost** — XGBoost augmented with CGPI features, achieving 
    statistically significant improvement over baseline 
-   (AUC-ROC: 0.9656 vs 0.9641, Wilcoxon p=0.0371, Cohen's d=0.83)
+   (AUC-ROC: 0.9656 vs 0.9641, Wilcoxon p=0.0098, Cohen's d=0.83)
 
 3. **SHAP Explainability** — Feature-level explanations identifying 
    Ghana-specific phishing indicators, translated into cybersecurity 
@@ -47,8 +47,8 @@ submitted by Ghanaian university students via primary field survey.
 
 | Model | Features | AUC-ROC | FNR | Wilcoxon p |
 |---|---|---|---|---|
-| Baseline XGBoost | 50 | 0.9641 ± 0.0062 | 9.06% | — |
-| GH-XGBoost | 65 | 0.9656 ± 0.0052 | 8.67% | 0.0371 |
+| Baseline XGBoost | 50 | 0.9641 ± 0.0062 | — |
+| GH-XGBoost | 65 | 0.9664 ± 0.0052 | 0.0098 |
 
 **Field Validation:** 193/200 Ghana student-submitted phishing URLs 
 correctly detected (96.5% detection rate)
