@@ -65,3 +65,62 @@ correctly detected (96.5% detection rate)
 ---
 
 ## Repository Structure
+xai-phishing-ghana-hei/
+├── GH_XGBoost_Final_Pipeline.ipynb # Complete reproducible pipeline
+├── ghana_field_urls_clean.csv # 200 Ghana field validation URLs
+├── ghana_field_validation_results.csv # Field validation results
+├── survey_cleaned.csv # Cleaned survey data (327 responses)
+├── requirements.txt # Software dependencies
+└── README.md
+
+---
+
+## Setup
+
+```bash
+git clone https://github.com/Providence-Design/xai-phishing-ghana-hei.git
+cd xai-phishing-ghana-hei
+pip install -r requirements.txt
+```
+
+Run the complete pipeline by opening `GH_XGBoost_Final_Pipeline.ipynb` 
+in Google Colab with T4 GPU runtime and running all cells in order.
+
+---
+
+## Requirements
+xgboost==2.0.3
+shap==0.44.0
+scikit-learn==1.4.0
+pandas==2.2.2
+numpy==1.26.4
+scipy
+matplotlib
+
+---
+
+## Ethics
+
+This study was approved by the KNUST Humanities and Social Sciences 
+Research Ethics Committee (HuSSREC). All survey data is anonymised 
+and reported at aggregate level only.
+
+---
+
+## Citation
+Annor Asemah, P. (2026). Context-Aware Ghanaian Phishing Indicators
+(CGPI): A Ghana-Contextualised URL Feature Taxonomy for Phishing
+Detection in Higher Education (Version 1.0.0) [Dataset]. Zenodo.
+https://doi.org/10.5281/zenodo.21634130
+
+---
+
+## License
+
+This repository is shared for academic and research purposes under 
+Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+## Contact
+
+Providence Annor Asemah — baabaprovidence@gmail.com
+
