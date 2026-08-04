@@ -69,6 +69,7 @@ correctly detected (96.5% detection rate)
 ---
 
 ## Repository Structure
+```
 xai-phishing-ghana-hei/
 ├── GH_XGBoost_Final_Pipeline.ipynb # Complete reproducible pipeline
 ├── ghana_field_urls_clean.csv # 200 Ghana field validation URLs
@@ -79,7 +80,7 @@ xai-phishing-ghana-hei/
 ├── survey_cleaned.csv # Cleaned survey data (327 responses)
 ├── requirements.txt # Software dependencies
 └── README.md
-
+```
 ---
 
 ## Setup
