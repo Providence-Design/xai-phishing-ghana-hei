@@ -97,6 +97,7 @@ in Google Colab with T4 GPU runtime and running all cells in order.
 ---
 
 ## Requirements
+```
 xgboost==2.0.3
 shap==0.44.0
 scikit-learn==1.4.0
@@ -104,7 +105,7 @@ pandas==2.2.2
 numpy==1.26.4
 scipy
 matplotlib
-
+```
 ---
 
 ## Ethics
