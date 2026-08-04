@@ -18,7 +18,7 @@ Kwame Nkrumah University of Science and Technology (KNUST), Ghana
 ## Overview
 
 This study engineers GH-XGBoost — a Ghana-contextualised phishing 
-detection model — by fabricating 15 Context-Aware Ghanaian Phishing 
+detection model — by constructing 15 Context-Aware Ghanaian Phishing 
 Indicators (CGPI) and integrating them into a baseline XGBoost 
 classifier. The model is trained on the Hannousse and Yahiouche (2021) 
 Web Phishing Detection Dataset and validated on 200 real phishing URLs 
@@ -35,7 +35,7 @@ submitted by Ghanaian university students via primary field survey.
 
 2. **GH-XGBoost** — XGBoost augmented with CGPI features, achieving 
    statistically significant improvement over baseline 
-   (AUC-ROC: 0.9656 vs 0.9641, Wilcoxon p=0.0098, Cohen's d=0.83)
+   (AUC-ROC: 0.9664 vs 0.9641, Wilcoxon p=0.0098, Cohen's d=0.9838)
 
 3. **SHAP Explainability** — Feature-level explanations identifying 
    Ghana-specific phishing indicators, translated into cybersecurity 
@@ -45,10 +45,12 @@ submitted by Ghanaian university students via primary field survey.
 
 ## Key Results
 
-| Model | Features | AUC-ROC | FNR | Wilcoxon p |
+| Model |            Features | AUC-ROC (10-fold CV) | FNR (test) | Wilcoxon p |
 |---|---|---|---|---|
-| Baseline XGBoost | 50 | 0.9641 ± 0.0062 | — |
-| GH-XGBoost | 65 | 0.9664 ± 0.0052 | 0.0098 |
+| Baseline XGBoost |  50 |     0.9641 ± 0.0062 |       8.67% |       — |
+| GH-XGBoost |        65 |     0.9664 ± 0.0052 |       8.19% |       0.0098 |
+
+
 
 **Field Validation:** 193/200 Ghana student-submitted phishing URLs 
 correctly detected (96.5% detection rate)
@@ -60,7 +62,9 @@ correctly detected (96.5% detection rate)
 | Dataset | Role | Size | Source |
 |---|---|---|---|
 | Web Phishing Detection Dataset | Training | 9,468 URLs | Hannousse & Yahiouche (2021) |
-| Ghana Student Survey | Field Validation | 200 URLs | Primary field data |
+| Ghana Student Survey (phishing) | Field Validation | 200 URLs | Primary field data |
+| Ghana Confirmed Legitimate URLs | Field Validation | 40 URLs | Manually assembled |
+
 
 ---
 
@@ -68,7 +72,10 @@ correctly detected (96.5% detection rate)
 xai-phishing-ghana-hei/
 ├── GH_XGBoost_Final_Pipeline.ipynb # Complete reproducible pipeline
 ├── ghana_field_urls_clean.csv # 200 Ghana field validation URLs
-├── ghana_field_validation_results.csv # Field validation results
+├── ghana_field_validation_results.csv  # Phishing field validation results
+├── ghana_legit_validation_results.csv  # Legitimate URL validation results
+├── ghana_legit_urls.csv                # 40 confirmed-legitimate Ghana URLs
+├── final_reported_statistics.json      # Locked statistics (2026-07-28)
 ├── survey_cleaned.csv # Cleaned survey data (327 responses)
 ├── requirements.txt # Software dependencies
 └── README.md
