@@ -1,10 +1,10 @@
 {
-  "run_timestamp": "2026-08-04 10:55:59.466522",
+  "run_timestamp": "2026-09-23 20:38:38.894751",
   "dataset": {
     "n_after_dedup": 9468,
     "n_features_baseline": 50,
     "n_features_gh": 65,
-    "scale_pos_weight": 1.1833
+    "scale_pos_weight": 0.8451
   },
   "data_split": {
     "train_size": 7574,
@@ -13,52 +13,52 @@
     "test_n_legitimate": 868
   },
   "baseline_test_set": {
-    "auc_roc": 0.9594,
-    "auc_pr": 0.9679,
-    "f1_macro": 0.8967,
-    "precision_macro": 0.8974,
-    "recall_macro": 0.8961,
-    "fnr": 0.0867,
-    "fnr_pct": 8.67,
-    "tp": 937,
-    "fp": 105,
-    "tn": 763,
-    "fn": 89
+    "auc_roc": 0.9609,
+    "auc_pr": 0.9688,
+    "f1_macro": 0.8922,
+    "precision_macro": 0.8919,
+    "recall_macro": 0.8925,
+    "fnr": 0.1033,
+    "fnr_pct": 10.33,
+    "tp": 920,
+    "fp": 97,
+    "tn": 771,
+    "fn": 106
   },
   "gh_xgboost_test_set": {
-    "auc_roc": 0.9637,
-    "auc_pr": 0.9708,
-    "f1_macro": 0.8971,
-    "precision_macro": 0.8983,
-    "recall_macro": 0.8963,
-    "fnr": 0.0819,
-    "fnr_pct": 8.19,
-    "tp": 942,
-    "fp": 109,
-    "tn": 759,
-    "fn": 84
+    "auc_roc": 0.9626,
+    "auc_pr": 0.9693,
+    "f1_macro": 0.9012,
+    "precision_macro": 0.9009,
+    "recall_macro": 0.9016,
+    "fnr": 0.0965,
+    "fnr_pct": 9.65,
+    "tp": 927,
+    "fp": 87,
+    "tn": 781,
+    "fn": 99
   },
   "delta": {
-    "auc_roc": 0.0044,
-    "auc_pr": 0.0029,
-    "f1_macro": 0.0004,
-    "fnr_relative_reduction_pct": 5.62
+    "auc_roc": 0.0017,
+    "auc_pr": 0.0006,
+    "f1_macro": 0.0091,
+    "fnr_relative_reduction_pct": 6.6
   },
   "cv_10fold": {
     "baseline_mean": 0.9641,
     "baseline_std": 0.0062,
     "gh_mean": 0.9664,
-    "gh_std": 0.0052,
+    "gh_std": 0.0051,
     "delta": 0.0023,
-    "wilcoxon_p": 0.0098,
-    "cohens_d": 0.9838,
-    "folds_gh_wins": 9
+    "wilcoxon_p": 0.0488,
+    "cohens_d": 0.8336,
+    "folds_gh_wins": 8
   },
   "field_validation": {
     "total_urls": 200,
-    "phishing_detected": 193,
-    "detection_rate_pct": 96.5,
-    "mean_phishing_prob": 0.8655,
-    "high_confidence_phishing": 158
+    "phishing_detected": 16,
+    "detection_rate_pct": 66.7,
+    "mean_phishing_prob": 0.6962,
+    "high_confidence_phishing": 13
   }
 }
